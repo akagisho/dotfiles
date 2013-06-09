@@ -1,0 +1,6 @@
+escape ^z^z
+autodetach on
+startup_message off
+vbell off
+defscrollback 1000
+hardstatus alwayslastline "%{= gk}[%m/%d %02c:%s]%{gW} %`%-w%{=b bw}%n %t%{-}%+w"
