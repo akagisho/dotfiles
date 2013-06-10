@@ -3,7 +3,7 @@
 cd $(dirname $0)
 
 for dotfile in .?*; do
-    if [ $dotfile != ".." -a $dotfile != ".git" ]; then
+    if [ $dotfile != ".." -a $dotfile != ".git" -a $dotfile != ".gitignore" ]; then
         if [ ! -f $HOME/$dotfile ]; then
             ln -sv "$PWD/$dotfile" $HOME
         else

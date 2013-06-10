@@ -50,3 +50,5 @@ preexec() {
 precmd() {
     echo -ne "\ek$(basename $PWD)\e\\"
 }
+
+[[ -f .zshrc.local ]] && source .zshrc.local
