@@ -2,13 +2,14 @@
 
 PS1="%m:%~ %n\$ "
 
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*' menu select=1
-zstyle ':zle:*' word-chars " /=;@:{},|"
-zstyle ':zle:*' word-style unspecified
-autoload -U compinit && compinit
 autoload -Uz select-word-style
 select-word-style default
+zstyle ':zle:*' word-chars " /=;@:{},|"
+zstyle ':zle:*' word-style unspecified
+
+autoload -U compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' menu select=1
 
 setopt BASH_AUTO_LIST
 setopt LIST_AMBIGUOUS
