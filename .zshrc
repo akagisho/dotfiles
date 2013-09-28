@@ -28,8 +28,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/Applications/MAMP/bin/php/php5.4.10/bin:$PATH"
 export PATH="/Applications/MAMP/Library/bin:$PATH"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-[[ -x $HOME/.rbenv/bin/rbenv ]] && eval "$(rbenv init -)"
+which rbenv > /dev/null && eval "$(rbenv init -)"
 
 if [ -x "/usr/local/opt/coreutils/libexec/gnubin/ls" ]; then
     alias ls="ls --color=auto"
