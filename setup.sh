@@ -3,11 +3,12 @@
 cd $(dirname $0)
 
 for dotfile in .?*; do
-    if [ $dotfile != ".." -a $dotfile != ".git" -a $dotfile != ".gitignore" ]; then
+    echo $dotfile | grep -E '^(\.\.|\.git|\.gitignore|\.gitmodules)$' > /dev/null
+    if [ $? -eq 1 ]; then
         if [ ! -f $HOME/$dotfile ]; then
             ln -sv "$PWD/$dotfile" $HOME
         else
-            echo "$HOME/$dotfile already exists (skipped)" 2>&1
+            echo "$HOME/$dotfile already exists (skipped)"
         fi
     fi
 done
