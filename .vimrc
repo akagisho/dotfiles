@@ -3,6 +3,9 @@ filetype off
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimfiler'
+
 set expandtab
 set tabstop=4
 set number
