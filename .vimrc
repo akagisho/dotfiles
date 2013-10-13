@@ -1,3 +1,8 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/vundle/
+call vundle#rc()
+
 set expandtab
 set tabstop=4
 set number
