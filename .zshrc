@@ -38,6 +38,8 @@ fi
 
 export GREP_OPTIONS='--color=auto'
 
+export DOCKER_HOST=tcp://
+
 alias telnets="openssl s_client -connect"
 
 [[ -f ~/perl5/perlbrew/etc/bashrc ]] && source ~/perl5/perlbrew/etc/bashrc
