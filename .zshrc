@@ -1,5 +1,8 @@
 [[ "$TERM" != "screen" ]] && exec screen -xR
 
+export LANGUAGE=ja_JP:ja
+export LC_ALL=ja_JP.UTF-8
+
 PS1="%m:%~ %n\$ "
 
 autoload -Uz select-word-style
