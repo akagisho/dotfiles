@@ -45,7 +45,8 @@ export DOCKER_HOST=tcp://
 
 alias telnets="openssl s_client -connect"
 
-[[ -f ~/perl5/perlbrew/etc/bashrc ]] && source ~/perl5/perlbrew/etc/bashrc
+export PATH="$HOME/.plenv/bin:$PATH"
+[[ -d $HOME/.plenv ]] && eval "$(plenv init -)"
 
 preexec() {
     echo -ne "\ek$(echo $1 | awk '{print $1}')\e\\"
