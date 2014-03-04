@@ -41,7 +41,7 @@ fi
 
 export GREP_OPTIONS='--color=auto'
 
-export DOCKER_HOST=tcp://
+export DOCKER_HOST=tcp://127.0.0.1:4243
 
 alias telnets="openssl s_client -connect"
 
