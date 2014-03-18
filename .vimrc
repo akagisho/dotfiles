@@ -1,10 +1,13 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/vundle/
-call vundle#rc()
 
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimfiler'
+if has('vim_starting')
+  set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
+  call neobundle#rc(expand('~/dotfiles/.vim/bundle/'))
+endif
+
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
 
 set expandtab
 set tabstop=4
