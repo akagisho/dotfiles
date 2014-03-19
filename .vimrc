@@ -8,6 +8,7 @@ endif
 
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
+NeoBundle 'LeafCage/yankround.vim'
 
 set expandtab
 set tabstop=4
@@ -29,3 +30,8 @@ endif
 
 au BufNewFile,BufRead *.rb      set nowrap tabstop=2 shiftwidth=2 softtabstop=2
 au BufNewFile,BufRead *.erb     set nowrap tabstop=2 shiftwidth=2 softtabstop=2
+
+nmap p <Plug>(yankround-p)
+nmap P <Plug>(yankround-P)
+nmap <C-p> <Plug>(yankround-prev)
+nmap <C-n> <Plug>(yankround-next)
