@@ -28,7 +28,7 @@ setopt share_history
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
-export PATH="/Applications/MAMP/bin/php/php5.4.10/bin:$PATH"
+export PATH="/Applications/MAMP/bin/php/php5.5.10/bin:$PATH"
 export PATH="/Applications/MAMP/Library/bin:$PATH"
 
 which rbenv > /dev/null && eval "$(rbenv init -)"
