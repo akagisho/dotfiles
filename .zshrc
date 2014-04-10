@@ -48,6 +48,12 @@ alias telnets="openssl s_client -connect"
 export PATH="$HOME/.plenv/bin:$PATH"
 [[ -d $HOME/.plenv ]] && eval "$(plenv init -)"
 
+export PYENV_ROOT="$HOME/.pyenv"
+if [ -d "$PYENV_ROOT" ]; then
+    export PATH=$PYENV_ROOT/bin:$PATH
+    eval "$(pyenv init -)"
+fi
+
 preexec() {
     echo -ne "\ek$(echo $1 | awk '{print $1}')\e\\"
 }
