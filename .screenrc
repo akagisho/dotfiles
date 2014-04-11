@@ -4,3 +4,6 @@ startup_message off
 vbell off
 defscrollback 10000
 hardstatus alwayslastline "%{= gk}[%m/%d %02c:%s]%{gW} %`%-w%{=b bw}%n %t%{-}%+w"
+
+bind S eval split focus screen
+bind | eval 'split -v' focus screen
