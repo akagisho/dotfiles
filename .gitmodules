@@ -1,9 +1,9 @@
-[submodule ".vim/vundle"]
-	path = .vim/vundle
-	url = https://github.com/gmarik/vundle.git
 [submodule ".vim/bundle/neobundle.vim"]
 	path = .vim/bundle/neobundle.vim
 	url = https://github.com/Shougo/neobundle.vim
+[submodule ".plenv"]
+	path = .plenv
+	url = https://github.com/tokuhirom/plenv.git
 [submodule ".pyenv"]
 	path = .pyenv
 	url = https://github.com/yyuu/pyenv.git
