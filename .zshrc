@@ -55,7 +55,14 @@ if [ -d "$PYENV_ROOT" ]; then
 fi
 
 preexec() {
-    echo -ne "\ek$(echo $1 | awk '{print $1}')\e\\"
+    ARG1=`echo $1 | awk '{print $1}'`
+    ARG2=`echo $1 | awk '{print $2}'`
+    if [ "$ARG1" = "ssh" ]; then
+        TITLE=$ARG2
+    else
+        TITLE=$ARG1
+    fi
+    echo -ne "\ek$TITLE\e\\"
 }
 
 precmd() {
