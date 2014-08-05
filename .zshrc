@@ -1,7 +1,6 @@
 [[ "$TERM" != "screen" ]] && LC_ALL=ja_JP.UTF-8 exec ~/bin/screen -xR
 
-export LANGUAGE=ja_JP:ja
-export LC_ALL=ja_JP.UTF-8
+export LC_ALL=en_US.UTF-8
 
 PS1="%m:%~ %n\$ "
 
