@@ -30,6 +30,7 @@ endif
 
 au BufNewFile,BufRead *.rb      set nowrap tabstop=2 shiftwidth=2 softtabstop=2
 au BufNewFile,BufRead *.erb     set nowrap tabstop=2 shiftwidth=2 softtabstop=2
+au BufNewFile,BufRead *.yml     set nowrap tabstop=2 shiftwidth=2 softtabstop=2
 
 nmap p <Plug>(yankround-p)
 nmap P <Plug>(yankround-P)
