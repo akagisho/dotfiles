@@ -41,6 +41,8 @@ fi
 export GREP_OPTIONS='--color=auto'
 
 export DOCKER_HOST=tcp://127.0.0.1:4243
+export DOCKER_TLS_VERIFY=1
+export DOCKER_CERT_PATH=/Users/sho/.boot2docker/certs/boot2docker-vm
 
 alias telnets="openssl s_client -connect"
 
