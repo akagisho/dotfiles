@@ -22,8 +22,8 @@ setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
 setopt share_history
 
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
 export PATH="/Applications/MAMP/bin/php/php5.5.10/bin:$PATH"
 export PATH="/Applications/MAMP/Library/bin:$PATH"
