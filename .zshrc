@@ -1,5 +1,3 @@
-[[ "$TERM" != "screen" ]] && LC_ALL=ja_JP.UTF-8 exec ~/bin/screen -xR
-
 export LC_ALL=en_US.UTF-8
 
 PS1="%m:%~ %n\$ "
@@ -45,6 +43,7 @@ export DOCKER_TLS_VERIFY=1
 export DOCKER_CERT_PATH=/Users/sho/.boot2docker/certs/boot2docker-vm
 
 alias telnets="openssl s_client -connect"
+alias ssh-tmux="~/dotfiles/bin/ssh-tmux.sh"
 
 export PATH="$HOME/.plenv/bin:$PATH"
 [[ -d $HOME/.plenv ]] && eval "$(plenv init -)"
